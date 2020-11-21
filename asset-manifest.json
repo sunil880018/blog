@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sunilblog/static/css/main.40aaf2cd.chunk.css",
-    "main.js": "/sunilblog/static/js/main.b80d2786.chunk.js",
-    "main.js.map": "/sunilblog/static/js/main.b80d2786.chunk.js.map",
+    "main.js": "/sunilblog/static/js/main.2392bcf5.chunk.js",
+    "main.js.map": "/sunilblog/static/js/main.2392bcf5.chunk.js.map",
     "runtime-main.js": "/sunilblog/static/js/runtime-main.24fbe5dd.js",
     "runtime-main.js.map": "/sunilblog/static/js/runtime-main.24fbe5dd.js.map",
     "static/js/2.87d425a4.chunk.js": "/sunilblog/static/js/2.87d425a4.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.24fbe5dd.js",
     "static/js/2.87d425a4.chunk.js",
     "static/css/main.40aaf2cd.chunk.css",
-    "static/js/main.b80d2786.chunk.js"
+    "static/js/main.2392bcf5.chunk.js"
   ]
 }
