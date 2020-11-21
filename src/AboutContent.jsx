@@ -8,7 +8,7 @@ const AboutContent = (props) =>{
     console.log(process.env.PUBLIC_URL + value.image);
      return (
         <div className="aboutContent">
-               <p><Link to ="/" style={{color:"#262626"}}><i className="fas fa-chevron-left"></i> Back</Link></p>
+               <p><Link to ="/sunilblog/" style={{color:"#262626"}}><i className="fas fa-chevron-left"></i> Back</Link></p>
            <div>
                <img src= {process.env.PUBLIC_URL + value.image} alt="img"/>
                <h4>{value.desc}</h4>

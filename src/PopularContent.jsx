@@ -7,7 +7,7 @@ const PopularContent = (props) =>{
     console.log(val.image);
      return (
         <div className="aboutContent">
-               <p className="Back"><Link to ="/"><i className="fas fa-chevron-left"></i> Back</Link></p>
+               <p className="Back"><Link to ="/sunilblog/"><i className="fas fa-chevron-left"></i> Back</Link></p>
            <div>
                <img src={process.env.PUBLIC_URL + val.image} alt="img"/>
                <p>{val.desc}</p>

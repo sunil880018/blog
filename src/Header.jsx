@@ -15,19 +15,19 @@ const Header = () =>{
             </div>
             <div className="menu">
                 <div>
-                <Link to ="/">Home</Link>
+                <Link to ="/sunilblog/">Home</Link>
                 </div>
                 <div>
                 <Link to="/frontent/">Frontend</Link>
                 </div>
                 <div>
-                <Link to ="/">Backend</Link>
+                <Link to ="/sunilblog/">Backend</Link>
                 </div>
                 <div>
-                <Link to ="/">API</Link>
+                <Link to ="/sunilblog/">API</Link>
                 </div>
                 <div>
-                <Link to ="/">About Us</Link>
+                <Link to ="/sunilblog/">About Us</Link>
                 </div>
             </div>
 
@@ -38,19 +38,19 @@ const Header = () =>{
             <article className="mobile-menu">
             <section className="list">
                 <div>
-                <Link to ="/">Home</Link>
+                <Link to ="/sunilblog/">Home</Link>
                 </div>
                 <div>
                 <Link to="/frontent/">Frontend</Link>
                 </div>
                 <div>
-                <Link to ="/">Backend</Link>
+                <Link to ="/sunilblog/">Backend</Link>
                 </div>
                 <div>
-                <Link to ="/">API</Link>
+                <Link to ="/sunilblog/">API</Link>
                 </div>
                 <div>
-                <Link to ="/">About Us</Link>
+                <Link to ="/sunilblog/">About Us</Link>
                 </div>
             </section>
         </article>

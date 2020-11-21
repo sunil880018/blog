@@ -11,7 +11,7 @@ const App = () =>{
     return (
        <>
          <Header/>
-         <Route path="/" exact={true} component={Homescreen} />
+         <Route path="/sunilblog/" exact={true} component={Homescreen} />
          <Route path="/AboutContent/:id" exact={true} component={AboutContent} />
          <Route path="/PopularContent/:id" exact={true} component={PopularContent} />
          <Route path="/frontent/" exact={true} component={Frontend} />
