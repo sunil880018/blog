@@ -1,9 +1,9 @@
 import React from "react-dom";
 import "./index.css";
 import {Link,Route} from "react-router-dom";
-import AboutFrontend from "./AboutFrontend";
-import PData, { FrontentData } from "./Data";
+import { PData,FrontentData } from "./Data";
 const Frontend = () =>{
+    console.log(PData);
     return (
        <>
          <main className="main">
@@ -13,7 +13,7 @@ const Frontend = () =>{
                      return (
                         <div>
                         <Link to={'/Aboutfront/' + val._id}>
-                            <img src={val.image} alt="img"/>
+                            <img src={process.env.PUBLIC_URL + val.image} alt="img"/>
                         </Link>
                              <h4>{val.desc}</h4>
                              <p>{val.para}</p>
@@ -32,7 +32,7 @@ const Frontend = () =>{
                      return (
                         <div>
                         <Link to={'/PopularContent/' + val._id}>
-                            <img src={val.image} alt="img"/>
+                            <img src={process.env.PUBLIC_URL + val.image} alt="img"/>
                         </Link>
                              <p>{val.desc}</p>
                         </div>

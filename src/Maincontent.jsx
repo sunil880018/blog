@@ -15,7 +15,7 @@ const Maincontent = () =>{
                      return (
                         <div>
                         <Link to={'/AboutContent/' + val._id}>
-                            <img src={val.image} alt="img"/>
+                            <img src={process.env.PUBLIC_URL + val.image} alt="img"/>
                         </Link>
                              <h4>{val.desc}</h4>
                              <p>{val.para}</p>
@@ -34,7 +34,7 @@ const Maincontent = () =>{
                      return (
                         <div>
                         <Link to={'/PopularContent/' + val._id}>
-                            <img src={val.image} alt="img"/>
+                            <img src={process.env.PUBLIC_URL + val.image} alt="img"/>
                         </Link>
                              <p>{val.desc}</p>
                         </div>

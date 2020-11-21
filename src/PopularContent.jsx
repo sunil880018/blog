@@ -9,7 +9,7 @@ const PopularContent = (props) =>{
         <div className="aboutContent">
                <p className="Back"><Link to ="/"><i className="fas fa-chevron-left"></i> Back</Link></p>
            <div>
-               <img src={val.image} alt="img"/>
+               <img src={process.env.PUBLIC_URL + val.image} alt="img"/>
                <p>{val.desc}</p>
            </div>
            <div>
