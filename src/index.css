@@ -1,13 +1,359 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+/* header css */
+.header{
+  font-family: 'Open Sans', sans-serif;
+  width: 1366px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 58px;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  z-index: 3;
+}
+.header .mobile-menu{
+  display: none;
+}
+.header .bar{
+  display: none;
+}
+.header div .logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff0040;
+}
+.header div .logo i{
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 5px;
+}
+.header .menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu a{
+  color: #fff;
+  margin-right: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  word-spacing: 5px;
+}
+.header .menu a:hover{
+  color: #ff0040;
+}
+.header .input{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header .input input{
+  height: 32px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.header .input button{
+  width: 100px;
+  height: 40px;
+  margin-left: 12px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #ff0040;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* main css */
+.main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 187px;
+}
+.main-content{
+  margin-bottom: 50px;
+}
+.main .main-content div{
+  width: 700px;
+}
+.main .main-content img{
+  width: 700px;
+}
+.main .main-content img:hover{
+  opacity: 0.8;
+}
+.main .main-content h3,h4,h5{
+  padding: 10px 0px;
+}
+.main .side-content div{
+  width: 350px;
+}
+.main .side-content img{
+  width: 360px;
+  height: 215px;
+}
+.main .side-content img:hover{
+  opacity: 0.8;
+}
+.main .side-content p{
+  padding: 20px 0px;
+  font-size: 14px;
+}
+.main-content p{
+  font-size: 14px;
+  line-height: 2;
+}
+.side-content h2{
+  padding-bottom: 20px;
+}
+footer{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  height: auto;
+  padding: 0px 20px;
+}
+.footer-about{
+  width: 700px;
+}
+.footer-about p{
+  font-size: 13px;
+  line-height: 1.7;
+}
+footer p{
+  color: #fff;
+  padding: 20px 10px;
+}
+footer h4{
+  color: #fff;
+}
+footer h3{
+  color: #fff;
+  padding-left: 20px;
+}
+footer a{
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  padding: 0px 20px;
+  line-height: 2;
+}
+footer a:hover{
+  color: #ff0040;
+}
+.User-comment{
+  width: 100%;
+  height: 200px;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 0px 20px;
+}
+.User-comment div i{
+  font-size: 30px;
+  padding: 0px 20px;
+}
+.aboutContent{
+  font-family: 'Open Sans', sans-serif;
+  width: 700px;
+  margin: auto;
+  height: auto;
+  margin-top: 140px;
+}
+
+.aboutContent i{
+  margin-right: 5px;
+  font-size: 10px;
+}
+.aboutContent img{
+  width: 700px;
+}
+.aboutContent form{
+  height: auto;
+  padding: 50px 100px;
+  background-color: #f3f3f3;
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 30px;
+}
+.aboutContent textarea{
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 20px 20px;
+  font-size: 15px;
+}
+.aboutContent input{
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  margin: 20px 0px;
+  padding: 0px 20px;
+}
+.aboutContent p{
+  line-height: 1.9;
+}
+
+.aboutContent button{
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #ff0040;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+@media(max-width:600px){
+  #root{
+    width: 360px;
+    margin: auto;
+  }
+  .header{
+    width: 100%;
+    height: 58px;
+    display: block;
+    position: static;
+    padding: 10px 0px;
+  }
+  .header .bar{
+    display: block;
+    margin-right: 30px;
+    color: #fff;
+    font-size: 30px;
+  }
+  .header .menu{
+    display: none;
+  }
+  .header .input{
+    display: none;
+  }
+  .mobile-logo{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header div .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .header div .logo{
+    margin-left: 20px;
+  }
+  .header div .logo i{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 7px;
+  }
+  .header .menu{
+    display: none;
+  }
+  .header .input{
+    display: none;
+  }
+  .header .mobile-menu{
+    display: block;
+    width: 400px;
+    height: 600px;
+    padding: 20px 10px;
+    margin-top: 8px;
+    transform: translateX(800px);
+    transition: all 0.5s;
+    background-color: #fff;
+  }
+  .header .mobile-menu a:hover{
+    color: #ff0040;
+  }
+  .header .open-menu{
+    transform: translateX(200px);
+  }
+  .mobile-menu div a{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+  }
+  .main{
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .main .main-content div{
+    width: 100%;
+  }
+  .main .main-content img{
+    width: 100%;
+  }
+  .main-content p,.main-content h4,.main-content h5{
+    padding: 0px 10px;
+  }
+  .main .side-content p {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+  .main-content h5{
+    margin-bottom: 20px;
+  }
+  footer{
+    width: 360px;
+    height: auto;
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+  .footer-about {
+    width: 360px;
+    padding: 10px;
+  }
+  .aboutContent {
+    width: 360px;
+    margin-top: 30px;
+  }
+  .aboutContent img{
+    width: 360px;
+    height: 215px;
+  }
+  .aboutContent p,.aboutContent h4,.aboutContent h5 {
+    padding: 10px;
+   }
+
+   .aboutContent form {
+    padding: 24px 10px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
 }
