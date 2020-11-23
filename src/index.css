@@ -290,6 +290,8 @@ footer a:hover{
     display: none;
   }
   .header .mobile-menu{
+    position: relative;
+    z-index: 10;
     display: block;
     width: 400px;
     height: 1000px;
@@ -310,13 +312,13 @@ footer a:hover{
     font-size: 16px;
   }
   .list .menu-head{
-    padding: 26px 65px;
+    padding: 26px 25px;
     background-color: #000;
     color: #fff;
     font-weight: bold;
   }
   .list .menu-head button{
-    margin-left: 60px;
+    margin-left: 117px;
     background-color: #000;
     outline: none;
     border: none;
@@ -326,7 +328,7 @@ footer a:hover{
     width: 50px;
   }
   .list div{
-    padding: 22px 65px;
+    padding: 22px 25px;
   }
   .list button{
     width: 90px;
@@ -345,13 +347,30 @@ footer a:hover{
     width: 70%;
     border-radius: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: none;
     outline: none;
     font-size: 14px;
+    background-color: #f3f3f3;
   }
   .main{
     flex-direction: column;
     margin-top: 0px;
+    position: relative;
+  }
+  .top{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+  }
+  .top a{
+    text-decoration: none;
+  }
+  .top a i{
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff0040;
+    padding: 5px 10px;
+    border-radius: 50%;
   }
   .main-content{
     margin-top: 25px;

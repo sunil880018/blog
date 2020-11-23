@@ -11,7 +11,7 @@ const Header = () =>{
     const href = "/";
     return (
        <>
-         <header className="header">
+         <header className="header"  id="cursor_top">
             <div className="mobile-logo">
                 <div className="logo"><Link to ="/"><i className="fas fa-code"></i></Link></div>
                 <p className="bar" onClick={openMenu}><i class="fas fa-bars"></i></p>

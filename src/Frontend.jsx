@@ -41,7 +41,9 @@ const Frontend = () =>{
               }
 
              </div>
-
+             <div className="top">
+               <a href="#cursor_top"><i class="fas fa-angle-up"></i></a>
+            </div>
          </main>
        </>
     );
