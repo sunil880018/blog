@@ -2,16 +2,19 @@ import React from "react-dom";
 import "./index.css";
 import {Link} from "react-router-dom";
 const Header = () =>{
-    const onMenu = () =>{
-        document.querySelector(".mobile-menu").classList.toggle("open-menu");
-      }
+    const openMenu = () =>{
+        document.querySelector('.mobile-menu').classList.add("open");
+    }
+    const closeMenu = () =>{
+        document.querySelector('.mobile-menu').classList.remove("open");
+    }
     const href = "/";
     return (
        <>
          <header className="header">
             <div className="mobile-logo">
                 <div className="logo"><Link to ="/"><i className="fas fa-code"></i></Link></div>
-                <p className="bar" onClick={onMenu}><i class="fas fa-bars"></i></p>
+                <p className="bar" onClick={openMenu}><i class="fas fa-bars"></i></p>
             </div>
             <div className="menu">
                 <div>
@@ -37,6 +40,7 @@ const Header = () =>{
             </div>
             <article className="mobile-menu">
             <section className="list">
+                <p className="menu-head">MENU <button onClick={closeMenu}>X</button></p>
                 <div>
                 <Link to ="/sunilblog/">Home</Link>
                 </div>
@@ -51,6 +55,12 @@ const Header = () =>{
                 </div>
                 <div>
                 <Link to ="/sunilblog/">About Us</Link>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search"/><br/>
+                </div>
+                <div>
+                    <button>Search</button>
                 </div>
             </section>
         </article>

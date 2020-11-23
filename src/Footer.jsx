@@ -6,7 +6,7 @@ const Footer = () =>{
        <>
          <footer>
            <div className="footer-about">
-               <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+               <p>A full stack developer is a web developer or engineer who works with both the front and back ends of a website or application—meaning they can tackle projects that involve databases, building user-facing websites, or even work with clients during the planning phase of projects.</p>
                <br/>
                <h4>
                    &copy; copyright 2020 All Right reserved.

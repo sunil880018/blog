@@ -1,6 +1,6 @@
 import React from "react-dom";
 import "./index.css";
-import {Link,Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import { PData,FrontentData } from "./Data";
 const Frontend = () =>{
     console.log(PData);
