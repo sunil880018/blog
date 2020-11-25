@@ -30,7 +30,7 @@ const Header = () =>{
                 <Link to ="/sunilblog/">API</Link>
                 </div>
                 <div>
-                <Link to ="/sunilblog/">About Us</Link>
+                <Link to ="/sunilblog/">About us</Link>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@ const Header = () =>{
             </div>
             <article className="mobile-menu">
             <section className="list">
-                <p className="menu-head">MENU <button onClick={closeMenu}>X</button></p>
+                <p className="menu-head">MENU <span onClick={closeMenu}>X</span></p>
                 <div>
                 <Link to ="/sunilblog/">Home</Link>
                 </div>
@@ -54,7 +54,7 @@ const Header = () =>{
                 <Link to ="/sunilblog/">API</Link>
                 </div>
                 <div>
-                <Link to ="/sunilblog/">About Us</Link>
+                <Link to ="/sunilblog/">About us</Link>
                 </div>
                 <div>
                     <input type="text" placeholder="Search"/><br/>
