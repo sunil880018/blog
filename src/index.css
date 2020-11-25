@@ -417,6 +417,9 @@ form h2{
   html{
     scroll-behavior: smooth;
   }
+  .main-content{
+    width: 100%;
+  }
   .main .main-content div{
     width: 100%;
   }
