@@ -5,6 +5,9 @@ import {PData} from "./Data";
 import {Link,Route} from "react-router-dom";
 import AboutContent from "./AboutContent";
 const Maincontent = () =>{
+    const closeMenu = () =>{
+        document.querySelector('.mobile-menu').classList.remove("open");
+    }
     return (
        <>
          <main className="main">
@@ -13,7 +16,7 @@ const Maincontent = () =>{
              {
                  Data.map((val) =>{
                      return (
-                        <div>
+                        <div onClick={closeMenu}>
                         <Link to={'/AboutContent/' + val._id}>
                             <img src={process.env.PUBLIC_URL + val.image} alt="img"/>
                         </Link>

@@ -3,11 +3,16 @@ import "./index.css";
 import {Link} from "react-router-dom";
 import { PData,FrontentData } from "./Data";
 const Frontend = () =>{
+
+    const closeMenu = () =>{
+        document.querySelector('.mobile-menu').classList.remove("open");
+    }
+    
     console.log(PData);
     return (
        <>
          <main className="main">
-             <div className="main-content">
+             <div className="main-content" onClick={closeMenu}>
              {
                  FrontentData.map((val) =>{
                      return (

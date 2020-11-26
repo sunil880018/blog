@@ -8,7 +8,7 @@ const Header = () =>{
     const closeMenu = () =>{
         document.querySelector('.mobile-menu').classList.remove("open");
     }
-    const href = "/";
+    
     return (
        <>
          <header className="header"  id="cursor_top">
